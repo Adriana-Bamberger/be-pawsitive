@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
   try {
     const result = await request
       .get('https://api.thecatapi.com/v1/images/search')
-      .query({ limit: 1, api_key: API_KEY })
+      .query({ limit: 10, api_key: API_KEY })
     res.json(result.body)
   } catch (err) {
     if (err instanceof Error) {
