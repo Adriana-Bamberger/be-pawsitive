@@ -1,0 +1,8 @@
+body {
+  background-image: url('catbackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Rock Salt', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
