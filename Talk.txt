@@ -1,0 +1,35 @@
+Intro: [Jeevan] 
+I was the [your role] I worked on [what you worked on]
+We made a website that shows cat images and even more cat images!
+
+Demo!
+
+Planning: [Peter]
+I was the [your role] I worked on [what you worked on]
+We used an Api that we had used before so where familer with the documentation.
+drew it out on paper and comfirmed roles when eveyone was here this morning.
+Noted out what components we'd need and the functions within those copoenets, added then to our chat with an image of our drawn wireframe on discord for the away people to see.
+
+Our MVP was just one cat showing up on screen.
+
+
+Wellbeing: [Adriana]
+I was the [your role] I worked on [what you worked on]
+We didn't really have a set wellbeing plan other than taking time for lunch.
+
+We aggred to work togher nicley, We worked on the back end first in pairs and then quad programed the frout - as we all wanted to know how it all linked together.
+
+
+Stretch:[Vinny]
+I was the [your role] I worked on [what you worked on]
+Our streach goles where getting more than one cat to conditnally display,
+haveing some css, background etc,
+and then makign a butoon in the corner that did the whole thing again but it switchs it from the cat api to the dog api.
+We did all of our streach goals but connecting our dog api, all the componts are in our code but not connected.
+
+Challenges: [Jeevan]
+
+Reandering the route, and getting the frount and back end routes to work together.
+we overcame it with trial and error, and help from the fascilitators
+
+we now understand: How it all clicks together?
