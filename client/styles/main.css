@@ -1,5 +1,5 @@
 body {
-  background-image: url('catbackground.jpg');
+  background-image: url('catbackground.png');
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Rock Salt', cursive;
@@ -20,10 +20,13 @@ button {
 h1 {
   text-align: center;
 }
-#cats {
+.container {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-#catImage {
+.catImage {
   margin: 25px;
   height: 500px;
   background-color: white;
@@ -31,6 +34,10 @@ h1 {
   border: 1px solid black;
   padding: 10px 10px 50px 10px;
 }
-#footer {
+.footer {
+  text-align: center;
+}
+
+.button {
   text-align: center;
 }

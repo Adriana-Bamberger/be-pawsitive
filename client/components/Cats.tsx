@@ -1,6 +1,7 @@
 // import request from 'superagent'
 // import { useQuery } from '@tanstack/react-query'
 // import type { CatImage } from '../models/catsInterface'
+import { Link } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { getCat } from '../apiClient'
 
@@ -26,11 +27,22 @@ function Cats() {
   }
 
   return (
-    <div id="cats">
-      <button onClick={handleClick}>i&#39;m sad :{'('} gimme cat :D </button>
-      <br></br>
-      {query.data && <img id="catImage" src={`${query.data.url}`} alt="" />}
-    </div>
+    <>
+      <div className="button">
+        <button onClick={handleClick}>i&#39;m sad :{'('} gimme cat :D </button>
+      </div>
+      <div className="container">
+        <br></br>
+        {query.data && (
+          <img className="catImage" src={`${query.data.url}`} alt="" />
+        )}
+      </div>
+      <div className="footer">
+        <Link to="/moarcats">
+          <button>are you still sad :3 </button>
+        </Link>
+      </div>
+    </>
   )
 }
 
