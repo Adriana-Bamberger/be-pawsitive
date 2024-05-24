@@ -1,28 +1,36 @@
-import request from 'superagent'
+// import request from 'superagent'
+// import { useQuery } from '@tanstack/react-query'
+// import type { CatImage } from '../models/catsInterface'
 import { useQuery } from '@tanstack/react-query'
+import { getCat } from '../apiClient'
 
 function Cats() {
   // Requesting API
-  const { data, isPending, isError } = useQuery({
-    queryKey: ['cats'],
-    queryFn: async () => {
-      const res = await request.get('/api/v1/cats')
-      return res.body
-    },
+  // const url = getCat()
+  const query = useQuery({
+    queryKey: ['cat'],
+    queryFn: getCat,
+    enabled: false,
   })
 
-  // Loading Bar
-  if (isPending) {
-    return <p>Loading...</p>
-  }
-
-  // Error
-  if (isError) {
-    return <p>ERROR!</p>
+  async function handleClick() {
+    query.refetch()
   }
 
   //Cat Display
-  return <></>
+  if (query.isLoading) {
+    return <h2>LOADING...</h2>
+  }
+  if (query.isError) {
+    return <h2>NO CATS FOR YOU</h2>
+  }
+
+  return (
+    <>
+      <button onClick={handleClick}>i&#39;m sad :{'('} gimme cat :D </button>
+      {query.data && <img id="catImage" src={`${query.data.url}`} alt="" />}
+    </>
+  )
 }
 
 export default Cats
