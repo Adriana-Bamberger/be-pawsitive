@@ -26,10 +26,11 @@ function Cats() {
   }
 
   return (
-    <>
+    <div id="cats">
       <button onClick={handleClick}>i&#39;m sad :{'('} gimme cat :D </button>
+      <br></br>
       {query.data && <img id="catImage" src={`${query.data.url}`} alt="" />}
-    </>
+    </div>
   )
 }
 
